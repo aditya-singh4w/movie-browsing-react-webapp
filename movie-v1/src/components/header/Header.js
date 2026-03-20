@@ -2,10 +2,12 @@ import "./Header.css";
 import { useState } from "react";
 import { FaHome, FaFilm, FaTv, FaFutbol, FaSearch, FaUserCircle, FaCompass } from "react-icons/fa";
 import LoginModal from "../login/LoginModal";
+import Search from "../search/Search";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const location = useLocation();
 
   return (
@@ -38,12 +40,13 @@ const Header = () => {
       </div>
 
       <div className="nav-right">
-        <FaSearch className="icon"/>
+        <FaSearch className="icon" onClick={() => setIsSearchOpen(true)} />
         <FaUserCircle className="icon" onClick={() => setIsLoginOpen(true)} />
       </div>
     </div>
     
     <LoginModal isOpen={isLoginOpen} onClose={() => setIsLoginOpen(false)} />
+    <Search isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
     </>
   );
 };
