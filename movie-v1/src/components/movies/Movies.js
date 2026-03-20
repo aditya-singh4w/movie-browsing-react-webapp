@@ -22,6 +22,17 @@ const Movies = () => {
         fetchMovies();
     }, []);
 
+    if (moviesGrid.length === 0) {
+        return (
+            <div className="movies-page-container" style={{ textAlign: 'center' }}>
+                <h2 className="movies-page-title">Now Playing in Theaters</h2>
+                <div style={{ padding: '100px 0' }}>
+                    <p>No movies available at the moment. Please try again later.</p>
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div className="movies-page-container">
             <h2 className="movies-page-title">Now Playing in Theaters</h2>

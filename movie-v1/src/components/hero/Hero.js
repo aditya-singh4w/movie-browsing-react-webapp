@@ -32,8 +32,25 @@ const Hero = ({ movies }) => {
   };
 
   const movie = heroMovies[currentIndex];
+  
+  if (!movies) {
+    return (
+      <div className="hero-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <h2>Loading Movies...</h2>
+      </div>
+    );
+  }
 
-  if (!movie) return null;
+  if (heroMovies.length === 0) {
+    return (
+      <div className="hero-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ textAlign: 'center' }}>
+          <h2>No movies found</h2>
+          <p>Please check your internet connection or API key.</p>
+        </div>
+      </div>
+    );
+  }
 
   const backdropUrl = movie.backdrop_path 
     ? `https://image.tmdb.org/t/p/original${movie.backdrop_path}` 
