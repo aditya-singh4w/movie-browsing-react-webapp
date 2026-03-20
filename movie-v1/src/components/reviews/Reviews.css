@@ -1,0 +1,121 @@
+.reviews-container {
+    padding: 100px 40px 40px 40px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.reviews-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.reviews-layout {
+    display: flex;
+    gap: 40px;
+}
+
+.reviews-poster {
+    flex: 0 0 300px;
+}
+
+.reviews-poster img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    object-fit: cover;
+}
+
+.reviews-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 25px 0;
+}
+
+/* Review Form Styling */
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-label {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 16px;
+    border-radius: 10px;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: gold;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+.submit-btn {
+    align-self: flex-start;
+    background: transparent;
+    border: 2px solid gold;
+    color: gold;
+    padding: 12px 36px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: gold;
+    color: black;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-item {
+    margin-bottom: 10px;
+}
+
+.review-body {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #eaeaea;
+}
+
+@media (max-width: 768px) {
+    .reviews-layout {
+        flex-direction: column;
+    }
+    .reviews-poster {
+        flex: 0 0 auto;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,111 @@
+.movies-page-container {
+    padding: 100px 40px 40px 40px; /* Offset to clear the absolute glass header */
+    max-width: 1400px;
+    margin: 0 auto;
+    color: white;
+}
+
+.movies-page-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    border-left: 5px solid #e50914;
+    padding-left: 15px;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.movie-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background: #111;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+    z-index: 10;
+}
+
+.movie-poster {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 2 / 3;
+    transition: opacity 0.3s ease;
+}
+
+.movie-card-overlay {
+    position: absolute;
+    bottom: -120px; /* Hidden state */
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: bottom 0.3s ease;
+}
+
+.movie-card:hover .movie-card-overlay {
+    bottom: 0;
+}
+
+.movie-card:hover .movie-poster {
+    opacity: 0.6;
+}
+
+.movie-card-title {
+    font-size: 1.1rem;
+    margin: 0 0 5px 0;
+    text-shadow: 1px 1px 3px black;
+}
+
+.movie-card-rating {
+    font-size: 0.9rem;
+    color: gold;
+    margin: 0 0 15px 0;
+}
+
+.movie-card-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.card-btn {
+    flex: 1;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.card-btn.play {
+    background: gold;
+    color: black;
+}
+
+.card-btn.play:hover {
+    background: #ffcc00;
+}
+
+.card-btn.details {
+    background: gold;
+    color: black;
+}
+
+.card-btn.details:hover {
+    background: #ffcc00;
+}

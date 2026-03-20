@@ -1,0 +1,7 @@
+[build]
+  base = "movie-v1"
+  command = "npm run build"
+  publish = "build"
+
+[context.production.environment]
+  CI = "false"

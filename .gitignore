@@ -1,0 +1,20 @@
+# Root .gitignore for movieclient project
+
+# Dependency directories
+node_modules/
+movie-v1/node_modules/
+
+# Build directories
+movie-v1/build/
+
+# Local env files
+.env
+.env.local
+movie-v1/.env
+movie-v1/.env.local
+
+# IDE and System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
