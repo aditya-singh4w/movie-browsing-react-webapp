@@ -31,20 +31,20 @@
   position: absolute;
   top: -15px;
   right: -15px;
-  background: #e50914;
-  color: white;
+  background: gold;
+  color: black;
   border-radius: 50%;
   padding: 8px;
   font-size: 2rem;
   cursor: pointer;
   z-index: 10001;
-  box-shadow: 0 0 15px rgba(229, 9, 20, 0.5);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
   transition: transform 0.3s;
 }
 
 .trailer-close-icon:hover {
   transform: scale(1.1);
-  background: #f40612;
+  background: #fc0;
 }
 
 .video-wrapper {

@@ -78,7 +78,8 @@
 }
 
 .tag {
-  background: red;
+  background: gold;
+  color: black;
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 12px;
