@@ -78,3 +78,45 @@
 .icon:hover {
   color: white;
 }
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+  .nav-item span {
+    display: none;
+  }
+  
+  .nav-item {
+    padding: 10px 15px;
+  }
+
+  .nav-right {
+    margin-left: 15px;
+    gap: 15px;
+  }
+
+  .glass-navbar {
+    padding: 6px 20px 6px 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .glass-navbar {
+    top: 10px;
+    width: 95%;
+    justify-content: space-between;
+    padding: 5px 15px;
+  }
+
+  .nav-left {
+    gap: 2px;
+  }
+
+  .nav-right {
+    margin-left: 0;
+    gap: 15px;
+  }
+
+  .nav-item {
+    padding: 8px 12px;
+  }
+}

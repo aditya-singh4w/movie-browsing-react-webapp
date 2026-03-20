@@ -109,3 +109,46 @@
 .card-btn.details:hover {
     background: #ffcc00;
 }
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .movies-page-container {
+        padding: 85px 15px 20px 15px;
+    }
+
+    .movies-page-title {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 15px;
+    }
+
+    .movie-card-overlay {
+        bottom: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+        padding: 10px;
+    }
+
+    .movie-card-title {
+        font-size: 0.9rem;
+    }
+
+    .movie-card-rating {
+        margin-bottom: 10px;
+    }
+
+    .card-btn {
+        padding: 6px 0;
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .movies-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}

@@ -131,3 +131,46 @@
 .dot.active {
   opacity: 1;
 }
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .hero-content {
+    bottom: 15%;
+    left: 10%;
+    right: 10%;
+    max-width: none;
+  }
+
+  .hero-nav {
+    display: none; /* Hide nav arrows on touch devices to save space */
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .play-btn, .info-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-content {
+    bottom: 12%;
+  }
+}
