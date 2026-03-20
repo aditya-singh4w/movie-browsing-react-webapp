@@ -73,16 +73,19 @@
 /* Tags */
 .hero-tags {
   display: flex;
+  align-items: center;
   gap: 10px;
   margin-bottom: 10px;
 }
 
 .tag {
   background: gold;
-  color: black;
-  padding: 5px 10px;
+  color: white;
+  padding: 5px 12px;
   border-radius: 20px;
   font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 /* Buttons */
