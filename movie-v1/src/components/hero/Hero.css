@@ -79,13 +79,11 @@
 }
 
 .tag {
-  background: gold;
   color: white;
-  padding: 5px 12px;
-  border-radius: 20px;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /* Buttons */
