@@ -11,7 +11,7 @@ const TMDB_API_KEY = "167f9a8cad1891d895d3c0c79d6917fd";
 const currentYear = new Date().getFullYear();
 const YEARS = Array.from({ length: currentYear - 1969 }, (_, i) => currentYear - i);
 
-const FILTERS = ['All', 'Movies', 'TV', 'Popular', 'Rating', 'Newest', 'Year'];
+const FILTERS = ['All', 'Popular', 'Rating', 'Newest', 'Year'];
 
 const Search = ({ isOpen, onClose }) => {
     const [searchQuery, setSearchQuery] = useState('');
