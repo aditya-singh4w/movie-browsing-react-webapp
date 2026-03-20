@@ -119,3 +119,23 @@
         margin: 0 auto;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .reviews-container {
+        padding: 85px 15px 20px 15px;
+    }
+
+    .reviews-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        font-size: 1.1rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
