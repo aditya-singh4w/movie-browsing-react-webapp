@@ -78,21 +78,24 @@
 
 .movie-card-buttons {
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
 .card-btn {
     flex: 1;
     text-align: center;
-    padding: 8px 0;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: bold;
+    padding: 9px 6px;
+    border-radius: 25px;
+    font-size: 0.88rem;
+    font-weight: 700;
     text-decoration: none;
     transition: all 0.2s ease;
     border: none;
     outline: none;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-btn.play {
@@ -102,15 +105,18 @@
 
 .card-btn.play:hover {
     background: #ffcc00;
+    transform: scale(1.03);
 }
 
 .card-btn.details {
-    background: gold;
-    color: black;
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .card-btn.details:hover {
-    background: #ffcc00;
+    background: rgba(255, 255, 255, 0.28);
+    transform: scale(1.03);
 }
 
 /* RESPONSIVE */
