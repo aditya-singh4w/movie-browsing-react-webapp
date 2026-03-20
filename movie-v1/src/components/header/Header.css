@@ -121,7 +121,7 @@
   }
 
   .icon {
-    padding: 10px; /* Increase hit area for touch */
-    font-size: 1.4rem;
+    padding: 12px; /* Further increase hit area */
+    font-size: 1.8rem; /* Make icons much larger */
   }
 }
