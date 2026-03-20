@@ -11,6 +11,7 @@ import Reviews from './components/reviews/Reviews';
 import NotFound from './components/notFound/NotFound';
 import Movies from './components/movies/Movies';
 import Tv from './components/tv/Tv';
+import Discover from './components/discover/Discover';
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
       <Routes>
           <Route path="/" element={<Layout/>}>
             <Route path="/" element={<Home movies={movies} />} ></Route>
+            <Route path="/discover" element={<Discover />} ></Route>
             <Route path="/movies" element={<Movies />} ></Route>
             <Route path="/tv" element={<Tv />} ></Route>
             <Route path="/Reviews/:movieId" element ={<Reviews getMovieData = {getMovieData} movie={movie} reviews ={reviews} setReviews = {setReviews} />}></Route>

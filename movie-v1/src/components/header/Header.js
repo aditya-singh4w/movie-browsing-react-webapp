@@ -30,9 +30,11 @@ const Header = () => {
           </div>
         </Link>
 
-        <div className="nav-item">
-          <FaCompass className="nav-icon" /> <span>Discover</span>
-        </div>
+        <Link to="/discover" style={{textDecoration:'none', color:'inherit'}}>
+          <div className={`nav-item ${location.pathname === '/discover' ? 'nav-active' : ''}`}>
+            <FaCompass className="nav-icon" /> <span>Discover</span>
+          </div>
+        </Link>
       </div>
 
       <div className="nav-right">
