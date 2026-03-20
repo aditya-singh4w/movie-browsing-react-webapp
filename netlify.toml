@@ -4,4 +4,6 @@
   publish = "build"
 
 [context.production.environment]
+  NODE_VERSION = "23"
+  NPM_FLAGS = "--legacy-peer-deps"
   CI = "false"
