@@ -90,6 +90,9 @@
     font-weight: bold;
     text-decoration: none;
     transition: all 0.2s ease;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .card-btn.play {
